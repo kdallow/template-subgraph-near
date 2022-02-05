@@ -1,7 +1,8 @@
 {
-  "name": "near-receipts",
+  "name": "did-subgraph",
   "version": "0.1.0",
-  "repository": "https://github.com/VitalPointAI/graph-near-receipts.git",
+  "repository": "https://github.com/kdallow/template-subgraph-near.git",
+  "author": "Kevin Dallow <kevindallow15@gmail.,com>",
   "license": "MIT",
   "scripts": {
     "codegen": "graph codegen",
@@ -9,7 +10,7 @@
     "deploy": "graph deploy ALuhning/DID-registry --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "0.25.1",
+    "@graphprotocol/graph-cli": "0.26.0",
     "@graphprotocol/graph-ts": "0.24.1"
   },
   "dependencies": {

@@ -1,4 +1,4 @@
-type Log @entity {
+type PutDID @entity {
   id: ID!
   blockTime: BigInt
   blockHeight: BigInt
@@ -14,8 +14,35 @@ type Log @entity {
   outcomeBlockHash: String
   log: String
   # above here are standard field properties, add custom ones below
+  standard: String
+  version: String
+  event: String
   accountId: String
   did: String
   registered: BigInt
   owner: String
+}
+
+type Init @entity {
+  id: ID!
+  blockTime: BigInt
+  blockHeight: BigInt
+  blockHash: String
+  predecessorId: String
+  receiverId: String
+  signerId: String
+  signerPublicKey: String
+  gasBurned: BigInt
+  tokensBurned: BigInt
+  outcomeId: String
+  executorId: String
+  outcomeBlockHash: String
+  log: String
+  # above here are standard field properties, add custom ones below
+  standard: String
+  version: String
+  event: String
+  accountId: String
+  adminID: String
+  adminSet: BigInt
 }
